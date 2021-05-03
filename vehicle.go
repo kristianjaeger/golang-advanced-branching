@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type vehicle interface{}
 
 type car struct {
@@ -64,7 +66,8 @@ func init() {
 		truck{"RAM1500", "Dodge", "Truck"}}
 
 	vehicleResult = make(map[string]feedbackResult)
-
+	fmt.Println(vehicleResult)
+	fmt.Println(inventory)
 }
 
 func main() {
