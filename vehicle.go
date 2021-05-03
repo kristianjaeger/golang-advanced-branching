@@ -3,15 +3,15 @@ package main
 type vehicle interface{}
 
 type car struct {
-	model        string
-	make         string
-	typeVehicile string
+	model       string
+	make        string
+	typeVehicle string
 }
 
 type truck struct {
-	model        string
-	make         string
-	typeVehicile string
+	model       string
+	make        string
+	typeVehicle string
 }
 
 type bike struct {
@@ -21,6 +21,7 @@ type bike struct {
 
 // Values array for the feedback.json file
 type Values struct {
+	Models []Model `json:"values"`
 }
 
 // Model array for the feedback.json file
