@@ -63,7 +63,7 @@ func init() {
 		truck{"F-150", "Ford", "Truck"},
 		truck{"RAM1500", "Dodge", "Truck"}}
 
-	var vehicleResult map[string]feedbackResult = make(map[string]feedbackResult)
+	vehicleResult := make(map[string]feedbackResult)
 	fmt.Println(vehicleResult)
 	fmt.Println(inventory)
 }
